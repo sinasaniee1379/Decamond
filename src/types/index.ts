@@ -6,6 +6,9 @@ export interface IButton {
   className: string;
   onClick?: () => void;
 }
+export interface IFormInput {
+  mobile: string;
+}
 
 export interface IInput<TFieldName extends string> {
   title: string;

@@ -2,14 +2,12 @@
 import { GetLoginService } from "@/api";
 import Button from "@/components/Button";
 import Input from "@/components/Input";
+import { IFormInput } from "@/types";
 import { LoginFormSchema } from "@/validation/login";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { SubmitHandler, useForm } from "react-hook-form";
 
-interface IFormInput {
-  mobile: string;
-}
 const Page = () => {
   const router = useRouter();
   const {
