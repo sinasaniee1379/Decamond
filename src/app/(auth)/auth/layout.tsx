@@ -14,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="container">{children}</div>
+        <Toaster />
+      </body>
     </html>
   );
 }

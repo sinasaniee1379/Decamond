@@ -1,0 +1,59 @@
+
+.form {
+  padding: 32px;
+  background: $bg-gray;
+  backdrop-filter: blur(20px);
+  box-shadow: $blue-shadow;
+  border-radius: 16px; 
+  border: 1px solid rgba(255, 255, 255, 0.18); // مرز داخلی زیبا
+  &__section {
+    display: flex;
+    flex-direction: column;
+    &-label {
+      margin-top: 20px;
+      gap: 5px;
+      display: flex;
+      flex-direction: column;
+    }
+    &-btn {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px 15px;
+      background: $primary;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+     
+      &:hover {
+        background: $primary-dark;
+      }
+    }
+    &-input {
+      background: rgba(255, 255, 255, 0.85);
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      padding: 10px 15px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.5);
+      font-size: 1rem;
+      color: $primary;
+      &:focus {
+        outline: none;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 0 2px $primary;
+      }
+    }
+    &-error {
+      font-family: "Vazir";
+      font-weight: 500;
+      margin-top: 5px;
+      height: 16px;
+      color: $error; /* A darker, more common error red */
+      font-size: 0.85em;
+    }
+  }
+}
